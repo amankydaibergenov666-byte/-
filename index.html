@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Қарасай батыр Мәдениет үйі</title>
+    <meta
+      name="description"
+      content="Қарасай батыр Мәдениет үйінің ресми сайты: үйірмелер, іс-шаралар, галерея және байланыс."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="site-bg"></div>
+    <header class="topbar" id="home">
+      <div class="brand">
+        <span class="brand__mark">Q</span>
+        <div>
+          <p class="brand__title" data-i18n="brandTitle">Қарасай батыр Мәдениет үйі</p>
+          <p class="brand__subtitle" data-i18n="brandSubtitle">Ресми мәдени орталық</p>
+        </div>
+      </div>
+
+      <button class="menu-toggle" aria-label="Open menu">☰</button>
+
+      <nav class="nav">
+        <a href="#home" data-i18n="navHome">Басты бет</a>
+        <a href="#about" data-i18n="navAbout">Біз туралы</a>
+        <a href="#clubs" data-i18n="navClubs">Үйірмелер</a>
+        <a href="#events" data-i18n="navEvents">Іс-шаралар</a>
+        <a href="#hall" data-i18n="navHall">Акт залы</a>
+        <a href="#gallery" data-i18n="navGallery">Галерея</a>
+        <a href="#contacts" data-i18n="navContacts">Байланыс</a>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language switcher">
+        <button class="lang-btn active" data-lang="kk">ҚАЗ</button>
+        <button class="lang-btn" data-lang="ru">РУС</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section reveal">
+        <div class="hero__content">
+          <p class="eyebrow" data-i18n="heroEyebrow">Мәдени мұра • Шығармашылық • Заманауи кеңістік</p>
+          <h1 data-i18n="heroTitle">Қарасай батыр Мәдениет үйіне қош келдіңіз</h1>
+          <p class="hero__lead" data-i18n="heroLead">
+            Қоғамды біріктіретін мәдениет, өнер және білім орталығы. Ресми ақпарат, үйірмелер,
+            концерттер мен іс-шаралар — барлығы бір жерде.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#events" data-i18n="heroPrimaryBtn">Іс-шараларды көру</a>
+            <a class="btn btn--ghost" href="#contacts" data-i18n="heroSecondaryBtn">Бізбен байланысу</a>
+          </div>
+        </div>
+        <div class="hero__card glass">
+          <p class="hero__card-title" data-i18n="heroCardTitle">Алдағы маңызды концерт</p>
+          <h3 data-i18n="heroCardEvent">«Көктем әуені» гала-кеші</h3>
+          <p data-i18n="heroCardDate">Күні: 2026 жылғы 15 сәуір</p>
+          <p data-i18n="heroCardPlace">Өтетін орны: Үлкен акт залы</p>
+        </div>
+      </section>
+
+      <section class="section reveal" id="about">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="aboutEyebrow">Орталық туралы</p>
+          <h2 data-i18n="aboutTitle">Біз туралы</h2>
+        </div>
+        <div class="grid grid--2">
+          <article class="panel glass">
+            <p data-i18n="aboutText1">
+              Қарасай батыр Мәдениет үйі — ауданның мәдени өмірін дамытатын заманауи алаң. Біз
+              дәстүр мен инновацияны үйлестіріп, әр жастағы тұрғындарға сапалы мәдени қызмет
+              ұсынамыз.
+            </p>
+          </article>
+          <article class="panel glass">
+            <p data-i18n="aboutText2">
+              Сайт құрылымы ресми жаңалықтар, үйірмелер, концерттер, фотогалерея және байланыс
+              деректерін ыңғайлы жариялауға арналған. Контентті кейін оңай толықтыра аласыз.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="clubs">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="clubsEyebrow">Даму бағыттары</p>
+          <h2 data-i18n="clubsTitle">Үйірмелер / Кружки</h2>
+        </div>
+        <div class="grid grid--3" id="clubsGrid"></div>
+      </section>
+
+      <section class="section reveal" id="events">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="eventsEyebrow">Мәдени күнтізбе</p>
+          <h2 data-i18n="eventsTitle">Іс-шаралар / Мероприятия</h2>
+        </div>
+        <div class="timeline" id="eventsList"></div>
+      </section>
+
+      <section class="section reveal" id="hall">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="hallEyebrow">Жеке кеңістік</p>
+          <h2 data-i18n="hallTitle">Актовый зал</h2>
+        </div>
+        <article class="hall-card glass">
+          <h3 data-i18n="hallCardTitle">Концерттер мен ресми кездесулерге арналған орталық сахна</h3>
+          <p data-i18n="hallCardText">
+            Актовый зал — бұл үйірме емес, ауқымды іс-шаралар, концерттер, форумдар және мерекелік
+            бағдарламалар өтетін негізгі алаң. Осы бөлімге афиша, билет ақпараты және сахна
+            жаңалықтарын оңай қоса аласыз.
+          </p>
+        </article>
+      </section>
+
+      <section class="section reveal" id="gallery">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="galleryEyebrow">Сәттер жинағы</p>
+          <h2 data-i18n="galleryTitle">Галерея</h2>
+        </div>
+        <div class="gallery" id="galleryGrid"></div>
+      </section>
+
+      <section class="section reveal" id="contacts">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="contactsEyebrow">Кері байланыс</p>
+          <h2 data-i18n="contactsTitle">Контакты</h2>
+        </div>
+        <div class="grid grid--2">
+          <article class="panel glass">
+            <h3 data-i18n="contactsInfoTitle">Байланыс ақпараты</h3>
+            <ul class="contact-list">
+              <li><strong data-i18n="contactsAddressLabel">Мекенжай:</strong> <span data-bind="address">[Адрес енгізіледі]</span></li>
+              <li><strong data-i18n="contactsPhoneLabel">Телефон:</strong> <span data-bind="phone">[Телефон енгізіледі]</span></li>
+              <li><strong>Instagram:</strong> <span data-bind="instagram">@your_instagram</span></li>
+              <li><strong>WhatsApp:</strong> <span data-bind="whatsapp">+7 XXX XXX XX XX</span></li>
+            </ul>
+          </article>
+          <article class="panel glass">
+            <h3 data-i18n="contactsHintTitle">Контентті жаңарту оңай</h3>
+            <p data-i18n="contactsHintText">
+              Нақты фото, карта, әлеуметтік желі сілтемелері және байланыс мәліметтері тек бір
+              конфигурация объектісінде сақталған. Сізге тек script.js файлындағы мәндерді
+              ауыстыру жеткілікті.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p data-i18n="footerText">© 2026 Қарасай батыр Мәдениет үйі. Барлық құқықтар қорғалған.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
